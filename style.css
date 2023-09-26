@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #27374d;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+  font-size: large;
+  color: #27374d;
+}
+
+p {
+  margin: 5px 5px;
+}
+
+video {
+  margin: 5px 5px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: "Pacifico", cursive;
+}
+
+h2 {
+  margin: auto;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 10px 5px 10px 5px;
+}
+
+.welcome-container {
+  margin: 10px 50px 0px 50px;
+}
+
+.projects-container {
+  margin: 15px 0 30px 0;
+}
+
+.footer-container {
+  margin-top: auto;
+  background-color: #9db2bf;
+}
+
+.intro {
+  line-height: 2;
+  padding: 1em;
+  background-color: #dde6ed;
+  border-radius: 15px;
+  margin: 40px 20px 10px 10px;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+  margin: 2em auto;
+}
+
+.project {
+  width: 300px;
+  padding: 1em;
+  background-color: #dde6ed;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.project * {
+  border-radius: 10px;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  padding: 15px 0px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+/* This effect was made by Ian Lunn:
+https://github.com/IanLunn/Hover */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 900px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
